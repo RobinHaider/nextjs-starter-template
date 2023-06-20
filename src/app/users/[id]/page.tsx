@@ -3,6 +3,7 @@ import getUserPost from '@/lib/getUserPost';
 import React, { Suspense } from 'react';
 import UserPosts from './components/UserPosts';
 import { Metadata } from 'next';
+import getAllUsers from '@/lib/getAllUsers';
 
 type Params = {
   params: {
@@ -53,4 +54,15 @@ export default async function UserPage({ params: { id } }: Params) {
       </Suspense>
     </div>
   );
+}
+
+// generate static params
+export async function generateStaticParams() {
+  const users: User[] = await getAllUsers();
+
+  return users.map((user) => ({
+    params: {
+      id: user.id.toString(),
+    },
+  }));
 }
