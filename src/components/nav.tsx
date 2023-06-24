@@ -44,10 +44,10 @@ export default function Navbar({ title }: Props) {
             Users
           </Link>
           <a
-            href='#responsive-header'
+            href='/wiki'
             className='block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white'
           >
-            Blog
+            Wiki
           </a>
         </div>
       </div>
