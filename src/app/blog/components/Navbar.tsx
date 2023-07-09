@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className='prose prose-xl mx-auto flex justify-between flex-col sm:flex-row'>
         <h1 className='text-3xl font-bold text-white grid place-content-center mb-2 md:mb-0'>
           <Link
-            href='/'
+            href='/blog'
             className='text-white/90 no-underline hover:text-white'
           >
             Robin Haider
@@ -16,25 +16,29 @@ export default function Navbar() {
         <div className='flex flex-row justify-center sm:justify-evenly align-middle gap-4 text-white text-4xl lg:text-5xl'>
           <Link
             className='text-white/90 hover:text-white'
-            href='https://www.youtube.com/@robinhaider'
+            href='https://www.youtube.com/channel/UCQa5P7CCCPQOm9ZyNmlar4w'
+            target='_blank'
           >
             <FaYoutube />
           </Link>
           <Link
             className='text-white/90 hover:text-white'
-            href='https://courses.davegray.codes/'
+            href='https://robinhaider.com/'
+            target='_blank'
           >
             <FaLaptop />
           </Link>
           <Link
             className='text-white/90 hover:text-white'
-            href='https://github.com/gitdagray'
+            href='https://github.com/RobinHaider'
+            target='_blank'
           >
             <FaGithub />
           </Link>
           <Link
             className='text-white/90 hover:text-white'
-            href='https://twitter.com/yesdavidgray'
+            href='https://twitter.com/robin_haider'
+            target='_blank'
           >
             <FaTwitter />
           </Link>
