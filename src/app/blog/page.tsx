@@ -1,3 +1,5 @@
+import Posts from './components/Posts';
+
 export default function BlogPage() {
   return (
     <div className='px-6 mx-auto'>
@@ -7,7 +9,7 @@ export default function BlogPage() {
           I&apos;m <span className='font-bold'>Robin</span>.
         </span>
       </p>
-      {/* <Posts /> */}
+      <Posts />
     </div>
   );
 }
