@@ -57,9 +57,15 @@ export default function Navbar({ title }: Props) {
           </Link>
           <Link
             href='/feedback'
-            className='block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white'
+            className='block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4'
           >
             Feedback
+          </Link>
+          <Link
+            href='/todo'
+            className='block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white'
+          >
+            Todo
           </Link>
         </div>
       </div>

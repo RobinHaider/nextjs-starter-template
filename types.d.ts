@@ -51,3 +51,10 @@ type BlogPost = {
   title: string;
   date: string;
 };
+
+type Todo = {
+  id: number;
+  title: string;
+  completed: boolean;
+  userId: number;
+};
